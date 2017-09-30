@@ -1,6 +1,6 @@
 public class maxSubMus {
 
-    public static String maxSubMus(int[] mus) {
+    public static int[] maxSubMus(int[] mus) {
         int res = mus[0];
         int sum = 0;
         int left = 0;
@@ -20,6 +20,8 @@ public class maxSubMus {
                 index = i;
             }
         }
-        return left + " " + right + " " + res;
+
+        return new int[]{left, right, res};
+
     }
 }
